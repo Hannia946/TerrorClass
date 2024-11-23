@@ -138,3 +138,9 @@ p {
 header h2 {
     font-family: Rubik Wet Paint, system-ui;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+   
+}
