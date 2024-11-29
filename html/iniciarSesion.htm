@@ -4,6 +4,27 @@
     <TITLE>TerrorClass</TITLE>
     <link rel="stylesheet" type="text/css" href="../Styles/estilos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .conteiner {
+            width: 500px;
+            
+            background: rgba(10, 10, 10, .6);
+            /*background: rgba(139, 0, 0, .3);*/
+        }
+        .main {
+            font-family: "Tajawal", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            
+            
+        }
+        body {
+            background-image: url('../Gallery/portadas/manosSangre.avif');
+            background-size: cover;
+            background-position: center;
+            
+        }
+    </style>
 </HEAD>
 <BODY>
     <header class="header">
@@ -13,18 +34,48 @@
     <nav class="nav">
         <ul>
             <li><a href="principal.htm"> Principal </a></li>
+            <li><a href="registrarse.htm"> Regístrate </a></li>
         </ul>
     </nav>
 
-    <main class="main">
+    <main class="main" style="display: flex; justify-content: center; align-content: center; align-items: center; height: fit-content;">
+        <div class="conteiner">
+            <section class="icono" style="display: flex; flex-direction:column; justify-content: center; align-content:center; margin: 2%">
+                <i class='bx bxs-user-circle' style="font-size: 100px; display: flex; justify-content: center;"></i>
+                <p style="display: flex; justify-content: center; font-size:25px">Iniciar Sesión</p>
+            </section>
+            <section class="datosUsuario" style="font-size: 17px; margin:5%; ">
+                <form style=" display: flex; flex-direction: column; justify-content:center;">
+                    <section style=" display: flex; flex-direction: column; justify-content:center;">
+                        <label style="text-align: center;" for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required style="width: 50%; height:30px; margin-left: 25%;">
+                    </section>
+                    <br />
+                    <section style=" display: flex; flex-direction: column; justify-content:center;">
+                        <label style="text-align:center;" for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" required style="width: 50%; height: 30px; margin-left: 25%;">
+                    </section>
+                    <br />
+                    <section style=" display: flex; justify-content:center; align-content:center;">
+                        <button style="font-size: 15px; width:90px; height: 30px;" type="submit">Ingresar</button>
+                    </section>
+                    <br />
+                    <p style="font-size: 17px;">
+                        ¿No tienes cuenta? <a style="color:red;" href="registrarse.htm">Regístrate</a>
+                    </p>
+
+                </form>
+            </section>
+
+        </div>
 
     </main>
 
-    <footer class="footer">
+    <footer style="color:white;" class="footer">
         <p>Redes Sociales</p>
-        <a><i class='bx bxl-facebook-circle'></i></a>
-        <a><i class='bx bxl-instagram-alt'></i></a>
-        <a><i class='bx bxl-tiktok'></i></a>
+        <a href=""><i class='bx bxl-facebook-circle'></i></a>
+        <a href=""><i class='bx bxl-instagram-alt'></i></a>
+        <a href=""><i class='bx bxl-tiktok'></i></a>
     </footer>
 
 </BODY>

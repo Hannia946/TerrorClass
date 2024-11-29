@@ -88,8 +88,13 @@ footer {
     width: 100%;
     color: white;
 }
-footer i, p {
+.footer i, p {
     margin-inline-end: 10px;
+    font-size: 20px;
+}
+
+.footer i {
+    font-size: 30px;
 }
 
 h2 {

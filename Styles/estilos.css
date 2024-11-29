@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 *
 {
     margin: 0px;
-    padding:0px;
+    padding:0px;   
     box-sizing:border-box;
 }
 
@@ -31,7 +32,6 @@ header
 }
 
 nav {
-
     height: 10%;
     width: 100%;
     font-family: "Rubik Wet Paint", system-ui;
@@ -90,11 +90,19 @@ main
     justify-content: center;
     align-items: center;
     padding:20px;
-    height: 5%;
+    height: 25%;
     width: 100%;
     color: darkred;
 }
-.footer i, p{
-    margin-inline-end: 10px;
-}
+    .footer i, p {
+        margin-inline-end: 10px;
+        font-size: 20px;
+    }
+
+    .footer i {
+        font-size: 30px;
+    }
+
+
+
 

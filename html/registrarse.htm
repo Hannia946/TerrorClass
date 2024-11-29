@@ -4,6 +4,35 @@
     <TITLE>TerrorClass</TITLE>
     <link rel="stylesheet" type="text/css" href="../Styles/estilos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            width:100%;
+            height:100%;
+            box-sizing:content-box;
+        }
+        .conteiner {
+            width: 500px;
+            
+            background: rgba(10, 10, 10, .6);
+            /*background: rgba(139, 0, 0, .3);*/
+        }
+
+        .main {
+            font-family: "Tajawal", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            
+        }
+
+        body {
+            background-image: url('../Gallery/portadas/manosSangre.avif');
+            background-size: cover;
+            background-position: center;
+            
+        }
+    </style>
 </HEAD>
 <BODY>
     <header class="header">
@@ -16,22 +45,68 @@
         </ul>
     </nav>
 
-    <main class="main">
-    
-        <div>
-            
-            <form >
-                <p><input type="text" id="usuario" required></p>
-                <p><label for="contraseña: ">Contraseña: <br><input type="password" id="password" required></label> </p>
-            </form>
+    <main class="main" style="display: flex; justify-content:center; align-content:center; height:fit-content;">
+        <div class="conteiner">
+            <section class="icono" style="display: flex; flex-direction:column; justify-content: center; align-content:center; margin: 2%">
+                <i class='bx bxs-user-circle' style="font-size: 100px; display: flex; justify-content: center;"></i>
+                <p style="display: flex; justify-content: center; font-size:25px">Regístrate</p>
+            </section>
+            <section class="registrarse" style="font-size: 17px; margin:3%;">
+                <form style=" display: flex; flex-direction: column; justify-content:center;">
+                    
+                    <section style=" display: flex; justify-content:center; align-content:center; flex-direction:column;">
+                        <p style="text-align:center; margin-bottom: 3px;">
+                            Al continuar, aceptas nuestro <a style="color:red;" href="">Acuerdo del usuario</a> y confirmas que has entendido la <a style="color:red;" href="">Política de privacidad.</a>
+                        </p>
+                        <div style="display:flex; justify-content: center; flex-direction:column;">
+                            <button id="ingresarTelefono"
+                                    style="font-size: 15px; width: 80%; height: 30px; margin-inline: auto; margin-bottom: 3px;"
+                                    type="submit">
+                                Continuar con Número de Teléfono
+                                <i style="vertical-align: middle;" class='bx bx-phone'></i>
+                            </button>
+
+                            <button id="ingresarGoogle"
+                                    style="font-size: 15px; width: 80%; height: 30px; margin-inline: auto; margin-bottom:       3px;"
+                                    type="submit">
+                                Continuar con Google
+                                <i style="vertical-align: middle;" class='bx bxl-google'></i>
+                            </button>
+
+                            <button id="ingresarApple"
+                                    style="font-size: 15px; width: 80%; height: 30px; margin-inline: auto; margin-bottom:       3px;"
+                                    type="submit">
+                                Continuar con Apple
+                                <i style="vertical-align: middle;" class='bx bxl-apple'></i>
+                            </button>
+
+                        </div>
+                        <br />
+                        <p style="text-align:center">O</p>
+                        <br />
+                        <section style=" display: flex; flex-direction: column; justify-content:center;">
+                            <label style="text-align: center;" for="correo">Correo:</label>
+                            <input type="text" id="correo" required style="width: 80%; height: 30px; margin-inline: auto">
+                        </section>
+                        <br />
+                        <button id="continuar"
+                                style="font-size: 15px; width: 20%; height: 30px; margin-inline: auto; margin-bottom:       3px;"
+                                type="submit">
+                            Continuar
+                        </button>
+                    </section>
+                </form>
+            </section>
+
         </div>
+
     </main>
 
-    <footer class="footer">
+    <footer style="color:white;" class="footer">
         <p>Redes Sociales</p>
-        <a><i class='bx bxl-facebook-circle'></i></a>
-        <a><i class='bx bxl-instagram-alt'></i></a>
-        <a><i class='bx bxl-tiktok'></i></a>
+        <a href=""><i class='bx bxl-facebook-circle'></i></a>
+        <a href=""><i class='bx bxl-instagram-alt'></i></a>
+        <a href=""><i class='bx bxl-tiktok'></i></a>
     </footer>
 
 </BODY>
