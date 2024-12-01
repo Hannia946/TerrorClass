@@ -5,27 +5,31 @@
     <link rel="stylesheet" type="text/css" href="../Styles/estilos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
     <style>
-        
-        .main{
-            height:90%;
+
+        .main {
+            height: 90%;
             display: flex;
             justify-content: center;
-            align-content:center;
-
+            align-content: center;
+            flex-direction: column;
+            margin-inline: auto;
         }
+        
         .historiasTop {
             margin: 2%;
             width: 100%;
             height: 100%;
-            margin-inline: auto;           
+            margin-inline: auto;          
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
         }
+        
+        
             .historiasTop a {
                 background-color: aqua;
-                border: 5px solid red;
+                border: 10px solid black;
                 width: 100%;
                 height: 70%;
                 padding: 2%;
@@ -37,16 +41,24 @@
                 
             }
 
-            .historiasTop a section h {
-                
+            .historiasTop a {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                background-position: center;
+                background-size: cover;
             }
 
             .historiasTop section p{
                 font-size:18px;
             }
+            .historiasTop section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
     </style>
-
-
 
 </HEAD>
 <BODY>
@@ -69,77 +81,81 @@
             <li><a href="principal.htm"> Principal </a></li>
         </ul>
     </nav>
-
+    <section>
+        <h1 style="color: white; font-size: 40px; margin: 10px; background-color: rgb(139, 0, 0, .6);"> <i class='bx bxs-hot'></i>Lo más Popular</h1>
+    </section>
     <main class="main">
-        
+
         <div class="historiasTop">
+           
+                <a class="historia1" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp'); ">
+                    <section style="background-color: rgba(10, 10, 10, .8);">
+                        <p style="font-family: Rubik Wet Paint; color: yellow;">
+                            Psicológico
+                        </p>
+                        <p style="font-size: 35px; color: red; font-weight: 700;">El Corazón Delator</p>
+                        <p style="text-align: center; color: yellow;">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>10,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
+                        </p>
+                    </section>
+                </a>
+            
+            
+            
+                
+                <a class="historia2" href="../Historias/Psicológico/archivos_html/laMascara.html" style="background-image: url('../Gallery/psicologico/muerteRoja.jpg');">
+                    <section style="background-color: rgba(10, 10, 10, .8);">
+                        <p style="font-family: Rubik Wet Paint; color: white; ">Psicológico </p>
+                        <p style="font-size: 35px; color: red; font-weight: 500; ">La Máscara de la Muerte Roja</p>
+                        <p style="text-align: center; color: white; font-weight: 700;">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>92,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>52,000</i>
+                        </p>
+                    </section>
+                </a>
+            
 
-            <a class="historia1" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp'); display:flex; align-content:center; justify-content:center;">
-                <section style="display:flex;flex-direction:column; justify-content:center; align-content:center;">
-                    <p style="font-family: Rubik Wet Paint; color:red; ">
-                        Psicológico
-                    </p>
-                    <p style="font-size: 40px; color:red; font-weight:700;">El Corazón Delator</p>
-                    <p style="text-align: center; color: red; font-weight:700;">
-                        <i class='bx bxs-heart'>10,000</i>
-                        <i class='bx bx-show'>50,000</i>
-                    </p>
-                </section>
-
-            </a>
-
-            <a class="historia2" href="../Historias/Psicológico/archivos_html/laMascara.html" style="background-image: url('../Gallery/psicologico/La-muerte-roja-Poe.jpg');">
-                <section>
-                    <p style="font-family: Rubik Wet Paint; color: white; ">
-                        Psicológico
-                    </p>
-                    <p style="font-size: 30px; color: white;">La Máscara de la Muerte Roja</p>
-                    <p style="text-align: center; color: white;">
-                        <i class='bx bxs-heart'>92,000</i>
-                        <i class='bx bx-show'>52,000</i>
-                    </p>
-                </section>
-            </a>
-
-            <a class="historia3" href="../Historias/Cósmico/archivos_html/elColor.html" style="background-image: url('../Gallery/cosmico/elColor.jpg');">
-                <section>
-                    <p style="font-family: Rubik Wet Paint; color: white; ">
-                        Terror Cósmico
-                    </p>
-                    <p style="font-size: 30px; color: white;">El Color que Cayó del Cielo</p>
-                    <p style="text-align: center; color: white;">
-                        <i class='bx bxs-heart'>9,000</i>
-                        <i class='bx bx-show'>50,000</i>
-                    </p>
-                </section>
-
-            </a>
-
-            <a class="historia5" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
-                <section>
-                    <p style="font-family: Rubik Wet Paint; color: white; ">
-                        Sobrenatural
-                    </p>
-                    <p style="font-size: 30px; color: white;">El Gato Negro</p>
-                    <p style="text-align: center; color: white;">
-                        <i class='bx bxs-heart'>8,700</i>
-                        <i class='bx bx-show'>50,500</i>
-                    </p>
-                </section>
-            </a>
-
-            <a class="historia5" href="../Historias/BodyHorror/archivos_html/Enjambre.html" style="background-image: url('../Gallery/bodyHorror/enjambreHombre.jpg'); ">
-                <section>
-                    <p style="font-family: Rubik Wet Paint;">
-                        Body Horror
-                    </p>
-                    <p style="font-size: 30px;  ">ENJAMBRE </p>
-                    <p style="text-align: center;">
-                        <i class='bx bxs-heart'>1200</i>
-                        <i class='bx bx-show'>8000</i>
-                    </p>
-                </section>
-            </a>
+           
+               
+                <a class="historia3" href="../Historias/Cósmico/archivos_html/elColor.html" style="background-image: url('../Gallery/cosmico/elColorCayo.jpg');">
+                    <section style="background-color: rgba(255, 255, 255, .5);">
+                        <p style="font-family: Rubik Wet Paint; color: black; "> Terror Cósmico </p>
+                        <p style="font-size: 35px; color: black; font-weight: 700;">El Color que Cayó del Cielo</p>
+                        <p style="text-align: center; color: black; font-weight: 700;">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>9,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
+                        </p>
+                    </section>
+                </a>
+            
+            
+          
+                <a class="historia4" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
+                    <section style="background-color: rgba(10, 10, 10, .7);">
+                        <p style="font-family: Rubik Wet Paint; color: yellow;">Sobrenatural</p>
+                        <p style="font-size: 35px; color: red; font-weight: 700;">El Gato Negro</p>
+                        <p style="text-align: center; color: yellow;">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
+                        </p>
+                    </section>
+                </a>
+            
+            
+           
+                <a class="historia5" href="../Historias/BodyHorror/archivos_html/Enjambre.html" style="background-image: url('../Gallery/bodyHorror/enjambreHombre.jpg');">
+                    <section style="background-color: rgba(255, 255, 255, .3);">
+                        <p style="font-family: Rubik Wet Paint; color: black;">Body Horror </p>
+                        <p style="font-size: 35px; color: black; font-weight: 700;">ENJAMBRE </p>
+                        <p style="text-align: center; color: black;">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>1200</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>8000</i>
+                        </p>
+                    </section>
+                </a>
+           
+            
 
         </div>
 
