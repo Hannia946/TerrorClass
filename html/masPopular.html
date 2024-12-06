@@ -18,9 +18,10 @@
             width: 100%;
             height: auto;
             color: white;
-            font-size: 25px;
+            font-size: 35px;
             box-sizing: border-box;
-            background-color: rgb(139, 0, 0, .6);
+            margin-bottom:5%;
+            /*background-color: rgb(139, 0, 0, .6);*/
         }
         div {
             width: 100%;
@@ -51,12 +52,14 @@
             height: 100%;
         }
         .rankingArticulo {
-            flex: 0 0 auto;
-            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
             text-align: center;
+            font-size: 40px;
             width: 100%;
             height: auto;
-            font-size:40px;
+            margin-bottom: 3%;
         }
 
         .contenidoArticulo {
@@ -68,31 +71,44 @@
             align-items: center;
         }
 
-        a {
+        .portadaHistoria {
             width: 100%;
-            height: 100%;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            flex-direction: column;
+            height: 100%;            
 
             background-position: center;
             background-size: cover;
             border-radius: 25px;
 
+            
+        }
+        .centro {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
             text-align: center;
+
             font-family: "Tajawal", sans-serif;
             font-weight: 200;
             font-style: normal;
         }
-        centro {
-            height:fit-content;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-content:center;
-            text-align:center;
-        }
+
+            .centro .generoHistoria {
+                font-size: 15px;
+                font-family: Rubik Wet Paint;
+                color: white;
+            }
+            .centro .tituloHistoria {
+                font-size: 18px;
+                color: red;
+                font-weight: 700;
+            }
+            .centro .iconos {
+                text-align: center;
+                color: white;
+                font-size:18px;
+            }
         
         img{
             
@@ -122,6 +138,7 @@
                 </ul>
             </li>
             <li><a href="principal.htm"> Principal </a></li>
+
         </ul>
     </nav>
     
@@ -135,20 +152,19 @@
             <section class="seccionArticulos">
 
                 <article class="articulo">
-                    <section class="rankingArticulo" ><h1>1</h1></section>
+                    <section class="rankingArticulo"><h1>1</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia1" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp');">
-                            <section class="centro" style="background-color: rgba(10, 10, 10, .8);">
-                                <p style="font-family: Rubik Wet Paint; color: yellow;">
-                                    Psicológico
-                                </p>
-                                <p style="font-size: 35px; color: red; font-weight: 700;">El Corazón Delator</p>
-                                <p style="text-align: center; color: yellow;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>10,000</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria" style=""> Psicológico </p>
+                        <p class="tituloHistoria" style="">El Corazón Delator</p>
+                        <p class="iconos" style="">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>10,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
+                        </p>
                     </section>
 
                 </article>
@@ -156,64 +172,68 @@
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>2</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia2" href="../Historias/Psicológico/archivos_html/laMascara.html" style="background-image: url('../Gallery/psicologico/muerteRoja.jpg');">
-                            <section class="centro" style="background-color: rgba(10, 10, 10, .8);">
-                                <p style="font-family: Rubik Wet Paint; color: white; ">Psicológico </p>
-                                <p style="font-size: 35px; color: red; font-weight: 500; ">La Máscara de la Muerte Roja</p>
-                                <p style="text-align: center; color: white; font-weight: 700;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>92,000</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>52,000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Psicológico/archivos_html/laMascara.html" style="background-image: url('../Gallery/psicologico/muerteRoja.jpg');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">Psicológico </p>
+                        <p class="tituloHistoria">La Máscara de la Muerte Roja</p>
+                        <p  class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>92,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>52,000</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>3</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia3" href="../Historias/Cósmico/archivos_html/elColor.html" style="background-image: url('../Gallery/cosmico/elColorCayo.jpg');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .5); ">
-                                <p style="font-family: Rubik Wet Paint; color: black; "> Terror Cósmico </p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">El Color que Cayó del Cielo</p>
-                                <p style="text-align: center; color: black; font-weight: 700;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>9,000</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Cósmico/archivos_html/elColor.html" style="background-image: url('../Gallery/cosmico/elColorCayo.jpg');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria"> Terror Cósmico </p>
+                        <p class="tituloHistoria">El Color que Cayó del Cielo</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>9,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
-                    <section class="rankingArticulo" ><h1>4</h1></section>
+                    <section class="rankingArticulo"><h1>4</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia4" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .7); ">
-                                <p style="font-family: Rubik Wet Paint; color: black;">Sobrenatural</p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">El Gato Negro</p>
-                                <p style="text-align: center; color: black;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">Sobrenatural</p>
+                        <p class="tituloHistoria">El Gato Negro</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>5</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia5" href="../Historias/BodyHorror/archivos_html/Enjambre.html" style="background-image: url('../Gallery/bodyHorror/enjambreHombre.jpg');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .3);">
-                                <p style="font-family: Rubik Wet Paint; color: black;">Body Horror </p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">ENJAMBRE </p>
-                                <p style="text-align: center; color: black;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>1200</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>8000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/BodyHorror/archivos_html/Enjambre.html" style="background-image: url('../Gallery/bodyHorror/enjambreHombre.jpg');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">Body Horror </p>
+                        <p class="tituloHistoria">Enjambre</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>1200</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>8000</i>
+                        </p>
                     </section>
                 </article>
 
@@ -233,66 +253,70 @@
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>1</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia1" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp');">
-                            <section class="centro" style="background-color: rgba(10, 10, 10, .8);">
-                                <p style="font-family: Rubik Wet Paint; color: yellow;">
-                                    Psicológico
-                                </p>
-                                <p style="font-size: 35px; color: red; font-weight: 700;">El Corazón Delator</p>
-                                <p style="text-align: center; color: yellow;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>10,000</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">
+                            Psicológico
+                        </p>
+                        <p class="tituloHistoria">El Corazón Delator</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>10,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>2</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia2" href="../Historias/Psicológico/archivos_html/laMascara.html" style="background-image: url('../Gallery/psicologico/muerteRoja.jpg');">
-                            <section class="centro" style="background-color: rgba(10, 10, 10, .8);">
-                                <p style="font-family: Rubik Wet Paint; color: white; ">Psicológico </p>
-                                <p style="font-size: 35px; color: red; font-weight: 500; ">La Máscara de la Muerte Roja</p>
-                                <p style="text-align: center; color: white; font-weight: 700;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>92,000</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>52,000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Psicológico/archivos_html/laMascara.html" style="background-image: url('../Gallery/psicologico/muerteRoja.jpg');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">Psicológico </p>
+                        <p class="tituloHistoria">La Máscara de la Muerte Roja</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>92,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>52,000</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>3</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia4" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .7); ">
-                                <p style="font-family: Rubik Wet Paint; color: black;">Sobrenatural</p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">El Gato Negro</p>
-                                <p style="text-align: center; color: black;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">Sobrenatural</p>
+                        <p class="tituloHistoria">El Gato Negro</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>4</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia4" href="../Historias/Psicológico/archivos_html/barrilAmontillado.html" style="background-image: url('../Gallery/psicologico/El-Barril-de-Amontillado.webp');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .6); ">
-                                <p style="font-family: Rubik Wet Paint; color: black;">Psicológico</p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">El Barril amontillado</p>
-                                <p style="text-align: center; color: black;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Psicológico/archivos_html/barrilAmontillado.html" style="background-image: url('../Gallery/psicologico/El-Barril-de-Amontillado.webp');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">Psicológico</p>
+                        <p class="tituloHistoria">El Barril amontillado</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
+                        </p>
                     </section>
                 </article>
 
@@ -311,34 +335,36 @@
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>Psicológico</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia1" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp');">
-                            <section class="centro" style="background-color: rgba(10, 10, 10, .8);">
-                                <p style="font-family: Rubik Wet Paint; color: yellow;">
-                                    Psicológico
-                                </p>
-                                <p style="font-size: 35px; color: red; font-weight: 700;">El Corazón Delator</p>
-                                <p style="text-align: center; color: yellow;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>10,000</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Psicológico/archivos_html/corazonDelator.html" style="background-image: url('../Gallery/psicologico/corazonDelator.webp');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">
+                            Psicológico
+                        </p>
+                        <p class="tituloHistoria">El Corazón Delator</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>10,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
                     <section class=" rankingArticulo"><h1>Cósmico</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia3" href="../Historias/Cósmico/archivos_html/elColor.html" style="background-image: url('../Gallery/cosmico/elColorCayo.jpg');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .5);">
-                                <p style="font-family: Rubik Wet Paint; color: black; "> Terror Cósmico </p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">El Color que Cayó del Cielo</p>
-                                <p style="text-align: center; color: black; font-weight: 700;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>9,000</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Cósmico/archivos_html/elColor.html" style="background-image: url('../Gallery/cosmico/elColorCayo.jpg');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria"> Terror Cósmico </p>
+                        <p class="tituloHistoria">El Color que Cayó del Cielo</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>9,000</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,000</i>
+                        </p>
                     </section>
                 </article>
                 
@@ -346,32 +372,34 @@
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>Sobrenatural</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia4" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .7); ">
-                                <p style="font-family: Rubik Wet Paint; color: black;">Sobrenatural</p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">El Gato Negro</p>
-                                <p style="text-align: center; color: black;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html" style="background-image: url('../Gallery/sobrenatural/gato-negro.webp');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria" >Sobrenatural</p>
+                        <p class="tituloHistoria">El Gato Negro</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>50,500</i>
+                        </p>
                     </section>
                 </article>
 
                 <article class="articulo">
                     <section class="rankingArticulo"><h1>Body Horror</h1></section>
                     <section class="contenidoArticulo">
-                        <a class="historia5" href="../Historias/BodyHorror/archivos_html/Enjambre.html" style="background-image: url('../Gallery/bodyHorror/enjambreHombre.jpg');">
-                            <section class="centro" style="background-color: rgba(255, 255, 255, .3);">
-                                <p style="font-family: Rubik Wet Paint; color: black;">Body Horror </p>
-                                <p style="font-size: 35px; color: black; font-weight: 700;">ENJAMBRE </p>
-                                <p style="text-align: center; color: black;">
-                                    <i style="font-weight: 800;" class='bx bxs-heart'>1200</i>
-                                    <i style="font-weight: 800;" class='bx bx-show'>8000</i>
-                                </p>
-                            </section>
+                        <a class="portadaHistoria" href="../Historias/BodyHorror/archivos_html/Enjambre.html" style="background-image: url('../Gallery/bodyHorror/enjambreHombre.jpg');">
+
                         </a>
+                    </section>
+                    <section class="centro">
+                        <p class="generoHistoria">Body Horror </p>
+                        <p class="tituloHistoria">Enjambre</p>
+                        <p class="iconos">
+                            <i style="font-weight: 800;" class='bx bxs-heart'>1200</i>
+                            <i style="font-weight: 800;" class='bx bx-show'>8000</i>
+                        </p>
                     </section>
                 </article>
             </section>
