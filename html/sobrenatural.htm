@@ -1,21 +1,24 @@
 <HTML>
 <HEAD>
     <META NAME="GENERATOR" Content="Microsoft Visual Studio">
-    <link rel="stylesheet" type="text/css" href="../Styles/estilosHistorias.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/estilosGenero.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <TITLE>TerrorClass</TITLE>
 </HEAD>
 <BODY>
+    <!--header-->
     <header>
         <h1>Terror Sobrenatural</h1>
     </header>
+    <!--Barra de navegación-->
     <nav>
         <ul>
             <li><i class='bx bx-search-alt'></i></li>
             <li>
                 Explorar
                 <ul>
-                    <li><a href="psicologico.htm">Psicologico</a></li>
+                    <li><a href="psicologico.htm">Psicológico</a></li>
                     <li><a href="cosmico.htm">Horror Cosmico</a></li>
                     <li><a href="bodyhorror.htm">Body Horror</a></li>
                 </ul>
@@ -23,19 +26,88 @@
             <li><a href="principal.htm"> Principal </a></li>
         </ul>
     </nav>
+    <!--Main-->
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
+        <!--Portada-->
+        <section class="portada" style="background-image: url(../Gallery/sobrenatural/portada.jpg);">
+        </section>
+        <!--Introducción al género-->
+        <section class="Introducción" style="">
+            <p>
+                Cruza al otro lado y enfréntate a fuerzas más allá de nuestra comprensión. Espíritus vengativos, maldiciones ancestrales y objetos embrujados cobran vida en relatos que te harán dudar si realmente estás solo en la habitación. Una mezcla de misterio y pavor que te acompañará incluso cuando apagues las luces.
+            </p>
+        </section>
+        <h1 style="font-family:Rubik Wet Paint; margin-bottom:2rem; font-size:40px; color:darkred;">
+            Historias
+        </h1>
+        <!--Contenedor con la lista de historias-->
+        <div class="content">
+            <!--Contenedor historia 1: El gato Negro-->
+            <div class="historia">
+                <div class="imagen">
+                    <img src="../Gallery/sobrenatural/gato-negro.webp" style="width:30rem;" />
+                </div>
+                <div class="texto">
+                    <h1 style="color:red;">El gato negro (The Black Cat)</h1>
+                    <p>
+                        En esta oscura confesión, un hombre atormentado narra su descenso a la locura, desencadenado por un simple gato negro. Lo que comienza como amor hacia su mascota se transforma en odio irracional, llevándolo a cometer actos impensables. Pero, ¿es todo producto de su mente o hay algo más siniestro acechando en las sombras? <a style="color:red;" href="../Historias/Sobrenatural/archivos_html/gatoNegro.html">Leer</a>
+
+                    </p>
+                    <p>Autor: Edgar Allan Poe</p>
+                    <p>
+                        <i style="font-weight: 800;" class='bx bxs-heart'>8,700</i>
+                        <i style="font-weight: 800; margin-left:1rem;" class='bx bx-show'>50,500</i>
+                    </p>
+                </div>
+            </div>
+            <!--Contenedor historia 2: La pata de mono-->
+            <div class="historia">
+                <div class="imagen">
+                    <img src="../Gallery/sobrenatural/laPataDeMono.jpg" style="width:30rem;" />
+                </div>
+                <div class="texto">
+                    <h1 style="color:red;">La pata de mono (The Monkey's Paw)</h1>
+                    <p>
+                        Un objeto aparentemente inofensivo, la pata de un mono, concede tres deseos a quienes la poseen. Sin embargo, cada deseo viene con un costo macabro e inesperado. En este relato inquietante, una familia descubrirá que jugar con el destino puede desatar consecuencias más horribles de lo imaginable. <a style="color:red;" href="../Historias/Sobrenatural/archivos_html/pataMono.html">Leer</a>
+                    </p>
+                    <p>Autor: William Wymark Jacobs</p>
+                    <p>
+                        <i style="font-weight: 800;" class='bx bxs-heart'>7,800</i>
+                        <i style="font-weight: 800;" class='bx bx-show'>45,000</i>
+                    </p>
+                </div>
+            </div>
+
+            <!--Contenedor historia 3: La mano -->
+            <div class="historia">
+                <div class="imagen">
+                    <img src="../Gallery/sobrenatural/laMano.jpg" style="width:30rem;" />
+                </div>
+
+                <div class="texto">
+                    <h1 style="color:red;">
+                        La mano (La main)
+                    </h1>
+                    <p>
+                        En un pequeño pueblo, un extraño extranjero mantiene como trofeo una mano humana cercenada, encadenada a la pared de su casa. ¿Es un macabro recuerdo o un terrible secreto esperando ser revelado? Cuando la mano desaparece misteriosamente, los límites entre la superstición y la realidad se desvanecen, dejando una inquietante sensación de terror en su estela. <a style="color:red;" href="../Historias/Sobrenatural/archivos_html/laMano.html">Leer</a>
+                    </p>
+                    <p>Autor: Guy de Maupassant</p>
+                    <p>
+                        <i style="font-weight: 800;" class='bx bxs-heart'>4,000</i>
+                        <i style="font-weight: 800;" class='bx bx-show'>20,000</i>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <p>Redes Sociales</p>
+            <a href=""><i class='bx bxl-facebook-circle'></i></a>
+            <a href=""><i class='bx bxl-instagram-alt'></i></a>
+            <a href=""><i class='bx bxl-tiktok'></i></a>
+        </footer>
     </main>
-    <footer class="footer">
-        <p>Redes Sociales</p>
-        <a href=""><i class='bx bxl-facebook-circle'></i></a>
-        <a href=""><i class='bx bxl-instagram-alt'></i></a>
-        <a href=""><i class='bx bxl-tiktok'></i></a>
-    </footer>
-
-
 
 </BODY>
 </HTML>

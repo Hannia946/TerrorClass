@@ -3,7 +3,35 @@
     <META NAME="GENERATOR" Content="Microsoft Visual Studio">
     <TITLE>TerrorClass</TITLE>
     <link rel="stylesheet" type="text/css" href="../Styles/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/estilosPrincipal.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+
+    <style>
+        .generos{
+            display:flex;
+            flex-direction:column;
+        }
+            .generos h1 {
+                font-family: Rubik Wet Paint;
+                color: red;
+                width: 30%;
+                height: auto;
+                background-color: black;
+            }
+        .descip {
+            width: 30%;
+            height: 100%;
+            font-size: 40px;
+            float: left;
+            text-align: justify;
+            font-family: "Tajawal", sans-serif;
+            align-content:center;
+            background-color:black;
+        }
+        .box p {
+            font-family: Rubik Wet Paint;
+        }
+    </style>
 </HEAD>
 <BODY>
     <header class="header">
@@ -23,7 +51,6 @@
                 </ul>
             </li>
             <li><a href="masPopular.html"> Lo más Popular </a></li>
-            <li><a href="feed.html"> Feed </a></li>
             <li><a href="iniciarSesion.htm"> Iniciar Sesión </a></li>
             <li><a href="registrarse.htm"> Registrarse </a></li>
         </ul>
@@ -31,14 +58,91 @@
 
     <main class="main">
 
+        <section class="introduccion" style="margin-top: 3rem; background-image: url('../Gallery/portadas/manosSangre.avif'); background-position:center; background-size:cover;">
+
+            <h1 class="bienvenida" style="font-family:Rubik Wet Paint; font-size: 40px; margin-bottom: 1rem; text-align:center;">Bienvenido a TERROR CLASS</h1>
+            <p style="font-family: 'Book Antiqua'; font-style: normal; font-size: 25px; text-align:justify; margin-inline:5rem;">
+                Adéntrate en un mundo donde las sombras cobran vida y los susurros en la oscuridad cuentan historias que estremecen el alma. Desde lo psicológico hasta lo sobrenatural, aquí encontrarás relatos que desafían tu valentía y encienden tu imaginación. ¿Te atreves a explorar los rincones más oscuros de nuestra colección? El miedo te espera… y no podrás resistirte.
+            </p>
+        </section>
+
+        <div class="slider">
+            <ul>
+                <li><img src="../Gallery/bodyHorror/portada2.jpg" /> </li>
+                <li><img src="../Gallery/cosmico/image2.jpg" /></li>
+                <li><img src="../Gallery/psicologico/portada.jpg" /> </li>
+                <li><img src="../Gallery/sobrenatural/portada.jpg" /></li>
+            </ul>
+        </div>
+
+        <div class="generos" style="background-image: url(../Gallery/psicologico/portada.jpg); background-position: center; background-size:cover;">
+            <a href="psicologico.htm"> <h1>Terror Psicológico</h1></a>
+            <section class="descip">
+                <p>
+                    Aquí el miedo no está en lo que ves, sino en lo que imaginas. Son historias que juegan con tu mente, desdibujan la realidad y te enfrentan a tus peores inseguridades, dejando cicatrices que no se ven, pero se sienten profundamente.
+                </p>
+            </section>
+        </div>
+        <div class="generos" style="background-image: url(../Gallery/sobrenatural/portada.jpg); background-position: center; background-size: cover;">
+            <a href="sobrenatural.htm"><h1>Terror Sobrenatural</h1></a>
+            <section class="descip">
+                <p>
+                    Fantasmas, maldiciones y entidades de otro mundo que desafían la lógica y atacan en lo desconocido. Este género te lleva a un enfrentamiento directo con lo imposible, donde cada sombra oculta un peligro y cada sonido puede ser tu último.
+                </p>
+            </section>
+
+        </div>
+        <div class="generos" style="background-image: url(../Gallery/bodyHorror/portada.webp); background-position: center; background-size: cover;">
+            <a href="bodyhorror.htm"> <h1>Body Horror</h1></a>
+            <section class="descip">
+                <p>
+                    La verdadera pesadilla está dentro de ti. Estas historias exploran la transformación del cuerpo humano en formas grotescas e inimaginables, llevándote a un límite donde la carne y el miedo se entrelazan en una danza de espanto.
+                </p>
+            </section>
+        </div>
+        <div class="generos" style="background-image: url(../Gallery/cosmico/portada2.png); background-position: center; background-size: cover;">
+            <a href="cosmico.htm"><h1>Horror Cósmico</h1></a>
+            <section class="descip">
+                <p>
+                    Más allá de las estrellas y en los abismos del universo, existen horrores que la mente humana no puede comprender. Estas historias te enfrentan a lo insignificante que somos ante fuerzas ancestrales e inalcanzables. Prepárate para sentir el peso de lo infinito.
+                </p>
+            </section>
+        </div>
+
+       
+        <div class="contenedor" style=" width: 100%; display: flex; flex-direction: column; justify-content: center; align-content: center; margin-top: 2rem;">
+            <h1 style="text-align: center; margin-bottom: 2rem; font-family: Rubik Wet Paint;">Algunos de nuestros autores:</h1>
+            <div class="autores" style="display:flex; justify-content:center; gap:5%; ">
+                <div class="box">
+                   <a href="https://www.lecturalia.com/autor/316/edgar-allan-poe"> <img src="../Gallery/portadas/poe.jpg" style="max-height: 200px; margin-bottom:1rem; border-radius:25px; border: 2px solid red;" /></a> 
+                    <p style="text-align:center;">
+                        Egdar Allan Poe
+                    </p>
+                </div>
+                <div class="box">
+                    <a href="https://es.wikipedia.org/wiki/H._P._Lovecraft"> <img src="../Gallery/portadas/lovecraft.jpg" style="max-height: 200px; margin-bottom: 1rem; border-radius: 25px; border: 2px solid red;" /></a>
+                    <p style="text-align:center;">Lovecraft </p>
+                </div>
+                <div class="box">
+
+                    <a href=" https://satoriediciones.com/escritor/edogawa-rampo/"> <img src="../Gallery/portadas/rampo.jpg" style="max-height: 200px; margin-bottom: 1rem; border-radius: 25px; border: 2px solid red;" /></a>
+                    <p style="text-align:center;">Edogawa Rampo</p>
+                   
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <footer class="footer">
+            <p>Redes Sociales</p>
+            <a href=""><i class='bx bxl-facebook-circle'></i></a>
+            <a href=""><i class='bx bxl-instagram-alt'></i></a>
+            <a href=""><i class='bx bxl-tiktok'></i></a>
+        </footer>
     </main>
 
-    <footer class="footer">
-        <p>Redes Sociales</p>
-        <a href=""><i class='bx bxl-facebook-circle'></i></a>
-        <a href=""><i class='bx bxl-instagram-alt'></i></a>
-        <a href=""><i class='bx bxl-tiktok'></i></a>
-    </footer>
-
+    <!--<script src="slider.js"></script>-->
 </BODY>
 </HTML>

@@ -43,7 +43,7 @@
                 <p style="display: flex; justify-content: center; font-size:25px">Iniciar Sesión</p>
             </section>
             <section class="datosUsuario" style="font-size: 17px; margin:5%; ">
-                <form style=" display: flex; flex-direction: column; justify-content:center;">
+                <form id="formulario" style=" display: flex; flex-direction: column; justify-content:center;">
                     <section style=" display: flex; flex-direction: column; justify-content:center;">
                         <label style="text-align: center;" for="usuario">Usuario:</label>
                         <input type="text" id="usuario" name="usuario" required style="width: 50%; height:30px; margin-left: 25%;">
@@ -57,6 +57,9 @@
                     <section style=" display: flex; justify-content:center; align-content:center;">
                         <button style="font-size: 15px; width:90px; height: 30px;" type="submit">Ingresar</button>
                     </section>
+                    <br />
+                    <p id="mensaje" style="color: red; display: none;">La contraseña debe tener al menos 8 caracteres.</p>
+
                     <br />
                     <p style="font-size: 17px;">
                         ¿No tienes cuenta? <a style="color:red;" href="registrarse.htm">Regístrate</a>
@@ -75,6 +78,8 @@
         <a href=""><i class='bx bxl-instagram-alt'></i></a>
         <a href=""><i class='bx bxl-tiktok'></i></a>
     </footer>
+
+    <script src="../Styles/archivo1.js"></script>
 
 </BODY>
 </HTML>
